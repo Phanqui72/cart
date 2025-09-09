@@ -1,38 +1,78 @@
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# ===================================================================
+# 1. Build artifacts & Dependencies
+# ===================================================================
+# Thư mục chứa kết quả build của Maven (quan trọng nhất)
+/target/
 
-### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
-*.iws
+# Các file đóng gói không nên được đưa lên Git
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Các file pom.xml tạm thời do Maven tạo ra
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+# Cấu hình của Maven wrapper
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+
+# ===================================================================
+# 2. IDE & Editor Files
+# ===================================================================
+# IntelliJ IDEA
+/.idea/
 *.iml
-*.ipr
+*.iws
+out/
+shelf/
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# VS Code
+.vscode/
 
-### NetBeans ###
+# Netbeans
 /nbproject/private/
+/build/
 /nbbuild/
 /dist/
 /nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+.nb-gradle/
 
-### VS Code ###
-.vscode/
+# Eclipse
+.classpath
+.project
+.settings/
 
-### Mac OS ###
+
+# ===================================================================
+# 3. Runtime & Log Files
+# ===================================================================
+# Log files
+*.log
+
+# Báo cáo lỗi của Java Virtual Machine
+hs_err_pid*
+replay_pid*
+
+
+# ===================================================================
+# 4. OS-specific files
+# ===================================================================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Mac
 .DS_Store
+.AppleDouble
+.LSOverride
