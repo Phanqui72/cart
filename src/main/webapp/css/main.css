@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    width: 650px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+h1 {
+    color: #00ff00; /* Màu xanh đậm cho tiêu đề */
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #c0c0c0; /* Màu xám cho đường viền */
+    text-align: left;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #f0f0f0; /* Màu nền xám nhạt cho header của bảng */
+}
+
+/* Căn lề phải cho cột giá và tổng tiền */
+td.right, th.right {
+    text-align: right;
+}
+
+/* Thiết lập chiều rộng cho các cột */
+th:nth-child(1), td:nth-child(1) { width: 45%; } /* Cột Description */
+th:nth-child(2), td:nth-child(2) { width: 15%; } /* Cột Price */
+th:nth-child(3), td:nth-child(3) { width: 40%; } /* Cột nút Add to cart */
+
+
+/* Định dạng cho các nút và input */
+input[type="submit"], input[type="button"] {
+    padding: 5px 10px;
+}
+
+input[type="text"] {
+    width: 40px;
+    text-align: center;
+}
+
+form {
+    margin: 0; /* Xóa margin mặc định của form */
+}
+
+p {
+    margin-top: 15px;
+}
+
+/* CSS riêng cho trang giỏ hàng */
+.cart-table th:nth-child(1) { width: 20%; } /* Cột Quantity */
+.cart-table th:nth-child(2) { width: 40%; } /* Cột Description */
+.cart-table th:nth-child(3) { width: 15%; } /* Cột Price */
+.cart-table th:nth-child(4) { width: 15%; } /* Cột Amount */
+.cart-table th:nth-child(5) { width: 10%; } /* Cột Remove */
+
+.cart-buttons {
+    margin-top: 20px;
+}
+
+.cart-buttons form {
+    display: inline-block;
+    margin-right: 10px;
+}
